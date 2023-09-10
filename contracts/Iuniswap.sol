@@ -16,6 +16,8 @@ interface IUniswap {
         address to,
         uint deadline
     ) external payable returns (uint[] memory amounts);
+
+    function WETH() external view returns (address);
 }
 
 interface IERC20 {
